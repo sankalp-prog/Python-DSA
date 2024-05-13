@@ -35,9 +35,7 @@ class HashSet:
         
 
 my_set = HashSet()
-my_set.add("H")
-my_set.add("H")
-my_set.add("I")
-my_set.add("G")
+my_set.add(1)
+my_set.add(1)
 my_set.print_values()
 print(my_set.contains("G"))
