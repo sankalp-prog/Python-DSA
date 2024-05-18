@@ -3,12 +3,13 @@
 #     index_list = []
 #     for num in nums:
 #         # added condition to give just the first possibility and not all
-#         if len(index_list) < 2:
+#         # if len(index_list) < 2:
 #             if target - num in nums:
 #                 # to remove duplicates and repetitions
 #                 if num != target - num and nums.index(num) < nums.index(target - num):
 #                     index_list.append(nums.index(num))
 #                     index_list.append(nums.index(target - num))
+#                     break
 #     return index_list
     
 # Course Solution:
