@@ -1,13 +1,13 @@
 # My Solution:
 def find_duplicates(input_list):
     my_dict = {}
-    array_with_duplicates = []
+    set_with_duplicates = set()
     for item in input_list:
-        if item in my_dict and item not in array_with_duplicates:
-            array_with_duplicates.append(item)
+        if item in my_dict and item not in set_with_duplicates:
+            set_with_duplicates.add(item)
         else:
             my_dict[item] = True
-    return array_with_duplicates
+    return set_with_duplicates 
 
 # # Course Solution:
 # def find_duplicates(nums):

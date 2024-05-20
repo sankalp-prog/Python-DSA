@@ -13,15 +13,26 @@
 #     return index_list
     
 # Course Solution:
-def two_sum(nums, target):
-    num_map = {}
-    for i, num in enumerate(nums):
-        complement = target - num
-        if complement in num_map:
-            return [num_map[complement], i]
-        num_map[num] = i
-    return []
+# def two_sum(nums, target):
+#     num_map = {}
+#     for i, num in enumerate(nums):
+#         complement = target - num
+#         if complement in num_map:
+#             return [num_map[complement], i]
+#         num_map[num] = i
+#     return []
     
+def two_sum(array_of_numbers, target_no):
+    seen = {}
+    for i, num in enumerate(array_of_numbers):
+        complement = target_no - num
+        # print(target_no, bil)
+        if complement in seen:
+            return [seen[complement], i]
+        else:
+            seen[num] = i
+    # print(bil)
+    return []
     
 print(two_sum([5, 1, 7, 2, 9, 3], 10))  
 print(two_sum([4, 2, 11, 7, 6, 3], 9))  
@@ -31,6 +42,7 @@ print ( two_sum([1, 2, 3, 4, 5], 10) )
 print ( two_sum([1, 2, 3, 4, 5], 7) )
 print ( two_sum([1, 2, 3, 4, 5], 3) )
 print ( two_sum([], 0) )
+
 
 
 
@@ -49,3 +61,6 @@ print ( two_sum([], 0) )
 """
 
 
+
+
+     
