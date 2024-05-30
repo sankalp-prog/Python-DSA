@@ -1,26 +1,26 @@
 # Did wihout using numpy
 class Graph:
     def __init__(self, n):
-        self.No_of_vertex = n
+        self.num_of_vertex = n
         self.adj_matrix = [[0]*n for _ in range(n)]
 
     def print_graph(self):
-        for i in range(self.No_of_vertex):
+        for i in range(self.num_of_vertex):
             print(f'{i} ->', end='    ')
-            for j in range(self.No_of_vertex):
+            for j in range(self.num_of_vertex):
                 print(self.adj_matrix[i][j], end="   ")
             print("\n")
 
     def add_edge(self, v1, v2):
         '''Taking (v1, v2) as input and creating the edge v1 -> v2'''
         if 0 < v1 < 5 and 0 < v2 < 5:
-            self.adj_matrix[v1][v2] = 1
+            self.adj_matrix[v1][v2] = True
             return True
         return False
         
     def remove_edge(self, v1, v2):
         if 0 < v1 < 5 and 0 < v2 < 5:
-            self.adj_matrix[v1][v2] = 0
+            self.adj_matrix[v1][v2] = False
 
 my_graph = Graph(5)
 my_graph.add_edge(1,2)
