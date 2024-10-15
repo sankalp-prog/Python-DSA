@@ -1,2 +1,2 @@
 # Python-DSA
-All DSA problems that I have worked on 
+DSA problems I worked on excluding Leetcode.
